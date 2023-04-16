@@ -19,7 +19,7 @@
 <body>
 
     <div class="brand">VideoFlex</div>
-    <div class="address-bar">The Plaza | 5483 Start Bootstrap Ave. | Beverly Hills, California 26892 | 555.519.2013</div>
+    <div class="address-bar">The Change Starts With You</div>
     <!-- Navigation -->
     <?php require_once 'navigation.php'; ?>
     <div class="container">
@@ -38,13 +38,13 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active">
-                                <img class="img-responsive img-full" src="img/slide-1.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/man-doing-color-correction.jpg" alt="Man doing color correction">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/slide-2.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/editing-gadgets.jpg" alt="Editing gadgets">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/slide-3.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/mobile-video-editing.jpg" alt="Mobile video editing">
                             </div>
                         </div>
 
@@ -77,9 +77,9 @@
                     <h2 class="intro-text text-center">Learn more about <strong>video editing</strong>
                     </h2>
                     <hr>
-                    <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
+                    <img class="img-responsive img-border img-left" src="img/laptop-on-a-desk.jpg" alt="Laptop on a desk">
                     <hr class="visible-xs">
-                    <p>When it comes to creating a film or any other kind of video project, much of the magic you see on-screen comes from great editing. It is quite astounding what a video editor can create. They start with a monumental mess of stuff, then cut and trim the pieces together. The final result is a complete story in video format. Video editing truly is where the magic happens, so let us dive into the blogs to learn more about.</p>
+                    <p>When it pertains to producing a film or any type of video undertaking, a significant part of the enchantment seen on screen is the product of exceptional editing. The capabilities of a video editor are amazing, given that they initiate with a colossal assortment of materials and then expertly slice and pare them together to produce a comprehensive tale in video structure. In essence, video editing is where the magic manifests, and there is a wealth of knowledge to be gained from exploring related blogs.</p>
                 </div>
             </div>
         </div>
