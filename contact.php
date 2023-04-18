@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Contact - Business Casual Template for Bootstrap</title>
+    <title>Videoflex</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -18,38 +18,11 @@
 
 <body>
 
-    <div class="brand">Business Casual</div>
+    <div class="brand">Videoflex</div>
     <div class="address-bar">The Change Starts With You</div>
 
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Business Casual</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a>
-                    </li>
-                    <li><a href="about.html">About</a>
-                    </li>
-                    <li><a href="blog.html">Blog</a>
-                    </li>
-                    <li><a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <!-- Navigation -->
+    <?php require_once 'navigation.php'; ?>
 
     <div class="container">
 
@@ -57,7 +30,7 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">Contact <strong>business casual</strong>
+                    <h2 class="intro-text text-center">Contact <strong>Videoflex</strong>
                     </h2>
                     <hr>
                 </div>
@@ -121,7 +94,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Company 2013</p>
+                    <p>Copyright &copy; Videoflex 2023</p>
                 </div>
             </div>
         </div>
