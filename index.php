@@ -20,6 +20,21 @@
 
     <div class="brand">VideoFlex</div>
     <div class="address-bar">The Change Starts With You</div>
+    <?php
+
+    if (isset($_GET["logout"])) {
+
+        if ($_GET["logout"] == "true") { ?>
+
+            <div class="alert alert-success">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>You have been logged out of the system.</strong>
+            </div>
+
+    <?php
+        }
+    }
+    ?>
     <!-- Navigation -->
     <?php require_once 'navigation.php'; ?>
     <div class="container">
@@ -101,10 +116,10 @@
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
     <script>
-    // Activates the Carousel
-    $('.carousel').carousel({
-        interval: 5000
-    })
+        // Activates the Carousel
+        $('.carousel').carousel({
+            interval: 5000
+        })
     </script>
 
 </body>

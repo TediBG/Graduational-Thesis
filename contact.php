@@ -14,6 +14,80 @@
 
     <!-- Add custom CSS here -->
     <link href="css/business-casual.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.10.2.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("#contact").click(function() {
+
+                fname = $("#fname").val();
+                email = $("#email").val();
+                message = $("#message").val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "sendmsg.php",
+                    data: "fname=" + fname + "&email=" + email + "&message=" + message,
+                    success: function(html) {
+                        if (html == 'true') {
+
+                            $("#add_err2").html('<div class="alert alert-success"> \
+                                                 <strong>Message Sent!</strong> \ \
+                                                 </div>');
+
+                        } else if (html == 'fname_long') {
+                            $("#add_err2").html('<div class="alert alert-danger"> \
+                                                 <strong>First Name</strong> must cannot exceed 50 characters. \ \
+                                                 </div>');
+
+                        } else if (html == 'fname_short') {
+                            $("#add_err2").html('<div class="alert alert-danger"> \
+                                                 <strong>First Name</strong> must exceed 2 characters. \ \
+                                                 </div>');
+
+                        } else if (html == 'email_long') {
+                            $("#add_err2").html('<div class="alert alert-danger"> \
+                                                 <strong>Email</strong> must cannot exceed 50 characters. \ \
+                                                 </div>');
+
+                        } else if (html == 'email_short') {
+                            $("#add_err2").html('<div class="alert alert-danger"> \
+                                                 <strong>Email</strong> must exceed 2 characters. \ \
+                                                 </div>');
+
+                        } else if (html == 'eformat') {
+                            $("#add_err2").html('<div class="alert alert-danger"> \
+                                                 <strong>Email</strong> format incorrect. \ \
+                                                 </div>');
+
+                        } else if (html == 'message_long') {
+                            $("#add_err2").html('<div class="alert alert-danger"> \
+                                                 <strong>Message</strong> must cannot exceed 50 characters. \ \
+                                                 </div>');
+
+                        } else if (html == 'message_short') {
+                            $("#add_err2").html('<div class="alert alert-danger"> \
+                                                 <strong>Message</strong> must exceed 2 characters. \ \
+                                                 </div>');
+
+
+                        } else {
+                            $("#add_err2").html('<div class="alert alert-danger"> \
+                                                 <strong>Error</strong> processing request. Please try again. \ \
+                                                 </div>');
+                        }
+                    },
+                    beforeSend: function() {
+                        $("#add_err2").html("loading...");
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -35,15 +109,15 @@
                     <hr>
                 </div>
                 <div class="col-md-8">
-                    <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
-                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.869680981059!2d25.689056312409843!3d43.12826377101146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a9291670c18139%3A0xd7fb505e51baabeb!2sM.%20V.%20Lomonosov%20School%20of%20Electrotechnics%20and%20Electronics!5e0!3m2!1sbg!2sbg!4v1682018060552!5m2!1sbg!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-md-4">
-                    <p>Phone: <strong>555.519.2013</strong>
+                    <p>Phone: <strong>0876543201</strong>
                     </p>
-                    <p>Email: <strong>feedback@startbootstrap.com</strong>
+                    <p>Email:
+                        <strong><a href="mailto:teodorpopov2004@abv.bg">teodorpopov2004@abv.bg</a></strong>
                     </p>
-                    <p>Address: <strong>The Plaza<br>5483 Start Bootstrap Ave.<br>Beverley Hills, CA 26829</strong>
+                    <p>Address: <strong>The <br> VHSEE "M. V. Lomonosov"<br>31 Nikola Petrov St., 5100 Center, Gorna Oryahovitsa</strong>
                     </p>
                 </div>
                 <div class="clearfix"></div>
@@ -62,20 +136,16 @@
                         <div class="row">
                             <div class="form-group col-lg-4">
                                 <label>Name</label>
-                                <input type="text" class="form-control">
+                                <input type="text" id="fname" name="fname" maxlength="25" class="form-control">
                             </div>
                             <div class="form-group col-lg-4">
                                 <label>Email Address</label>
-                                <input type="email" class="form-control">
-                            </div>
-                            <div class="form-group col-lg-4">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control">
+                                <input type="email" id="email" name="email" maxlength="25" class="form-control">
                             </div>
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
                                 <label>Message</label>
-                                <textarea class="form-control" rows="6"></textarea>
+                                <textarea class="form-control" id="message" name="message" maxlength="100" rows="6"></textarea>
                             </div>
                             <div class="form-group col-lg-12">
                                 <input type="hidden" name="save" value="contact">
@@ -101,7 +171,6 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
 
 </body>
