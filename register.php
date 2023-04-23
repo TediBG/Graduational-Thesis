@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Videoflex - Register</title>
+    <title>VideoFlex - Register</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -77,7 +77,7 @@
 
 <body>
 
-    <div class="brand">Videoflex</div>
+    <div class="brand">VideoFlex</div>
     <div class="address-bar">The Change Starts With You</div>
 
     <!-- Navigation -->
@@ -127,7 +127,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Videoflex 2023</p>
+                    <p>Copyright &copy; VideoFlex 2023</p>
                 </div>
             </div>
         </div>

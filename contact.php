@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Videoflex</title>
+    <title>VideoFlex</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -92,7 +92,7 @@
 
 <body>
 
-    <div class="brand">Videoflex</div>
+    <div class="brand">VideoFlex</div>
     <div class="address-bar">The Change Starts With You</div>
 
     <!-- Navigation -->
@@ -124,39 +124,6 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                    <hr>
-                    <h2 class="intro-text text-center">Contact <strong>form</strong>
-                    </h2>
-                    <hr>
-                    <p>This contact form is just the form elements, it is not a working form. You will have to make the form work by yourself, or take it out if you can't figure out how to make it work.</p>
-                    <form role="form">
-                        <div class="row">
-                            <div class="form-group col-lg-4">
-                                <label>Name</label>
-                                <input type="text" id="fname" name="fname" maxlength="25" class="form-control">
-                            </div>
-                            <div class="form-group col-lg-4">
-                                <label>Email Address</label>
-                                <input type="email" id="email" name="email" maxlength="25" class="form-control">
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="form-group col-lg-12">
-                                <label>Message</label>
-                                <textarea class="form-control" id="message" name="message" maxlength="100" rows="6"></textarea>
-                            </div>
-                            <div class="form-group col-lg-12">
-                                <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-default">Submit</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-
     </div>
     <!-- /.container -->
 
@@ -164,7 +131,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Videoflex 2023</p>
+                    <p>Copyright &copy; VideoFlex 2023</p>
                 </div>
             </div>
         </div>
