@@ -53,7 +53,7 @@
                             height: 100%;
                         }
                     </style>
-                    <div class='embed-container'><iframe src='https://www.youtube.com/embed//15CxWKICKM8' frameborder='0' allowfullscreen></iframe></div>
+                    <div class='embed-container'><iframe src='https://www.youtube.com/embed//MQBfEFK5vg0' frameborder='0' allowfullscreen></iframe></div>
                 </div>
                 <div class="col-md-6">
                     <p>Video editing is the process of manipulating and rearranging video footage to create a
@@ -82,7 +82,7 @@
                     <h3></h3>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <img class="img-responsive" src="img/teodors-photo.jpg" alt="Photo of Teodor Popov">
+                    <img class="img-responsive" src="img/teodor's photo.png" alt="Photo of Teodor Popov">
                     <h3>Teodor Popov
                         <small>Developer</small>
                     </h3>

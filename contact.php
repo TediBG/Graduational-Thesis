@@ -112,7 +112,7 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.869680981059!2d25.689056312409843!3d43.12826377101146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a9291670c18139%3A0xd7fb505e51baabeb!2sM.%20V.%20Lomonosov%20School%20of%20Electrotechnics%20and%20Electronics!5e0!3m2!1sbg!2sbg!4v1682018060552!5m2!1sbg!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-md-4">
-                    <p>Phone: <strong>0876543201</strong>
+                    <p>Phone: <strong>0888677186</strong>
                     </p>
                     <p>Email:
                         <strong><a href="mailto:teodorpopov2004@abv.bg">teodorpopov2004@abv.bg</a></strong>
