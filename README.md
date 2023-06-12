@@ -1,2 +1,2 @@
 # Graduational-Thesis
-This project is still under development, but it is interesting to show.
+This project is finished, and it is interesting to be seen.
